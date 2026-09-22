@@ -1,8 +1,8 @@
 const EMERGENCIES = [
     {
     id: "MAIN",
-    title: "",
-    icon: "",
+    title: "MAIN PAGE",
+    icon: "🏡",
     keywords: ["MAIN","main"],
     summary: "MAIN PAGE."}
   },
