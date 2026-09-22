@@ -1,11 +1,4 @@
 const EMERGENCIES = [
-    {
-    id: "MAIN",
-    title: "MAIN PAGE",
-    icon: "🏡",
-    keywords: ["MAIN","main"],
-    summary: "MAIN PAGE."}
-  },
   {
     id: "severe-bleeding",
     title: "Severe Bleeding",
