@@ -1,19 +1,19 @@
 /* --- Base Variables & Settings --- */
 :root {      
-    --bg: #f1f5f9;      
-    --surface: #ffffff;      
-    --ink: #0f172a;      
-    --muted: #64748b;      
-    --border: #e2e8f0;      
-    --accent: #dc2626;      
-    --accent-dark: #b91c1c;      
-    --accent-soft: #fee2e2;      
-    --ok: #16a34a;      
-    --ok-soft: #dcfce7;      
-    --warn-bg: #fef2f2;      
-    --shadow: 0 10px 30px rgba(15, 23, 42, 0.08);      
-    --radius: 18px;      
-    --radius-sm: 12px;      
+    bg: #f1f5f9;      
+    surface: #ffffff;      
+    ink: #0f172a;      
+    muted: #64748b;      
+    border: #e2e8f0;      
+    accent: #dc2626;      
+    accent-dark: #b91c1c;      
+    accent-soft: #fee2e2;      
+    ok: #16a34a;      
+    ok-soft: #dcfce7;      
+    warn-bg: #fef2f2;      
+    shadow: 0 10px 30px rgba(15, 23, 42, 0.08);      
+    radius: 18px;      
+    radius-sm: 12px;      
     box-sizing: border-box;  
 } /* <-- FIXED: Added missing closing brace */
 
