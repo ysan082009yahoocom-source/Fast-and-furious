@@ -179,3 +179,48 @@
 
   renderTabs("");
 })();
+// --- PWA Custom Installation Logic ---
+let deferredPrompt;
+const installBtn = document.getElementById('installBtn');
+
+// 1. Listen for the browser's installation eligibility signal
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent Chrome from showing its default banner automatically
+  e.preventDefault();
+  // Stash the event trigger so it can be deployed on our button click
+  deferredPrompt = e;
+  // Reveal your custom "Install App" button by unhiding it
+  if (installBtn) {
+    installBtn.removeAttribute('hidden');
+  }
+});
+
+// 2. Trigger the install prompt when your user clicks the button
+if (installBtn) {
+  installBtn.addEventListener('click', async () => {
+    if (!deferredPrompt) return;
+    
+    // Show the native system install installation prompt
+    deferredPrompt.prompt();
+    
+    // Wait for the user to accept or dismiss the option
+    const { outcome } = await deferredPrompt.userChoice;
+    console.log(`User installation choice: ${outcome}`);
+    
+    // Reset our deferred variable; the prompt can only be used once
+    deferredPrompt = null;
+    
+    // Re-hide the button since the setup is processed
+    installBtn.setAttribute('hidden', '');
+  });
+}
+
+// 3. Completely hide the button if the app is successfully installed
+window.addEventListener('appinstalled', () => {
+  console.log('Fast & Furious PWA was successfully installed.');
+  deferredPrompt = null;
+  if (installBtn) {
+    installBtn.setAttribute('hidden', '');
+  }
+});
+
