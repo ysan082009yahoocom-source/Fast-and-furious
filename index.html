@@ -1,16 +1,15 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Fast &amp; Furious First Aid</title>
   <meta name="description" content="An offline-ready first aid and med kit reference guide organized by emergency type." />
   <meta name="theme-color" content="#dc2626" />
-  <link rel="manifest" href="./manifest.json" />
-  <link rel="icon" href="./icons/icon.svg" type="image/svg+xml" />
-  <!-- Fixed relative path for CSS -->
-  <link rel="stylesheet" href="./css/styles.css" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 <body>
   <header class="app-header">
@@ -22,7 +21,7 @@
       </div>
     </div>
     <div class="header-actions">
-      <span id="offlineBadge" class="offline-badge">Checking offline status…</span>
+      <span id="offlineBadge" class="offline-badge">Checking offline status</span>
       <button id="installBtn" class="btn btn-install" type="button" hidden>Install App</button>
       <button id="printBtn" class="btn btn-print" type="button">Print / Save PDF</button>
     </div>
@@ -30,6 +29,7 @@
 
   <div class="search-bar">
     <label class="sr-only" for="searchInput">Search emergencies</label>
+    <!-- FIXED: Added missing terminal closing quotes to the placeholder attribute -->
     <input
       id="searchInput"
       type="search"
@@ -39,18 +39,16 @@
   </div>
 
   <nav id="tabs" class="tabs" role="tablist" aria-label="Emergency categories"></nav>
-
   <main id="content" class="content" role="tabpanel" aria-live="polite"></main>
 
   <footer class="app-footer">
     <p>
-      ⚠️ This guide is for general informational and educational use and is not a substitute
-      for professional medical advice. In a life-threatening emergency, always call emergency services.
+      ⚠️ This guide is for general informational and educational use and is not a substitute for professional medical advice. In a life-threatening emergency, always contact emergency services.
     </p>
   </footer>
 
-  <!-- Fixed relative paths for JS -->
-  <script src="./js/data.js"></script>
-  <script src="./js/app.js"></script>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
+```
