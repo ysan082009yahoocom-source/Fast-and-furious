@@ -1,0 +1,25 @@
+ {
+  "name": "Fast & Furious First Aid",
+  "short_name": "FA First Aid",
+  "description": "An offline-ready first aid and med kit reference guide organized by emergency type.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "minimal-ui",
+  "orientation": "any", 
+  "background_color": "#f1f5f9",
+  "theme_color": "#dc2626",
+  "icons": [
+    {
+      "src": "icons/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "icons/icon-maskable.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ]
+}
