@@ -442,23 +442,3 @@ body {
         background: #f2f2f2;
         break-inside: avoid;
     }
-    /* Hide all view sections by default */
-.view {
-  display: none;
-}
-
-/* Only display the view that has the active class */
-.view.active {
-  display: block; /* or display: flex / grid depending on your styling */
-}
-
-/* Custom styles for your main home layout */
-.home-header {
-  text-align: center;
-  padding: 20px;
-}
-.dashboard-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-}
