@@ -1,4 +1,4 @@
-const CACHE_NAME = "fast-and-furious-first-aid-v1";
+const CACHE_NAME = "fast-and-furious-first-aid-v2";
 
 const ASSETS = [
   "./",
