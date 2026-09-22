@@ -4,7 +4,7 @@
   "description": "An offline-ready first aid and med kit reference guide organized by emergency type.",
   "start_url": "./index.html",
   "scope": "./",
-  "display": "minimal-ui",
+  "display": "standalone",
   "orientation": "any", 
   "background_color": "#f1f5f9",
   "theme_color": "#dc2626",
