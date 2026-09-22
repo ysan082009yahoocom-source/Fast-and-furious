@@ -3,12 +3,12 @@ const CACHE_NAME = "fast-and-furious-first-aid-v1";
 const ASSETS = [
   "./",
   "./index.html",
-  "./css/styles.css",
-  "./js/data.js",
-  "./js/app.js",
+  "./styles.css",
+  "./data.js",
+  "./app.js",
   "./manifest.json",
-  "./icons/icon.svg",
-  "./icons/icon-maskable.svg"
+  "./icon.svg",
+  "./icon-maskable.svg"
 ];
 
 self.addEventListener("install", function (event) {
