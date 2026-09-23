@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medi-Guide</title>
+  <meta name="description" content="An offline-ready first aid and med kit reference guide organized by emergency type." />
+  <meta name="theme-color" content="#dc2626" />
+  <link rel="manifest" href="manifest.json" />
+  <link rel="icon" href="icon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="app-header">
+    <div class="brand">
+      <span class="brand-icon" aria-hidden="true">🩹</span>
+      <div class="brand-text">
+        <h1>Medi-Guide</h1>
+        <p class="tagline">Emergency response, organized and usable offline</p>
+      </div>
+    </div>
+    <div class="header-actions">
+      <span id="offlineBadge" class="offline-badge">Checking offline status</span>
+      <button id="installBtn" class="btn btn-install" type="button" hidden>Install App</button>
+      <button id="printBtn" class="btn btn-print" type="button">Print / Save PDF</button>
+    </div>
+  </header>
+
+  <div class="search-bar">
+    <label class="sr-only" for="searchInput">Search emergencies</label>
+    <input
+      id="searchInput"
+      type="search"
+      placeholder="Search emergencies e.g. burn, choking, seizure"
+      autocomplete="off"
+    />
+  </div>
+
+  <nav id="tabs" class="tabs" role="tablist" aria-label="Emergency categories"></nav>
+  <main id="content" class="content" role="tabpanel" aria-live="polite"></main>
+
+  <footer class="app-footer">
+    <p>
+      This guide is for general informational and educational use and is not a substitute 
+      for professional medical advice. In a life-threatening emergency, always call 
+      emergency services.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
