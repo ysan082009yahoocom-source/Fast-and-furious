@@ -442,3 +442,83 @@ body {
         background: #f2f2f2;
         break-inside: avoid;
     }
+
+/* ---------- Main Landing View Dashboard ---------- */
+.main-landing-view {
+    width: 100%;
+    animation: fade-in 0.25s ease;
+}
+
+.landing-card {
+    background: var(--surface);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    padding: 2.5rem clamp(1.25rem, 5vw, 2.5rem);
+    border-top: 5px solid var(--accent);
+}
+
+.landing-card h2 {
+    margin: 0 0 0.75rem 0;
+    font-size: clamp(1.4rem, 4vw, 1.8rem);
+    color: var(--ink);
+    letter-spacing: -0.02em;
+}
+
+.landing-card > p {
+    margin: 0 0 2rem 0;
+    color: var(--muted);
+    font-size: 1.05rem;
+    line-height: 1.6;
+    max-width: 780px;
+}
+
+.landing-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1.25rem;
+}
+
+.feature-item {
+    background: #f8fafc;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 1.5rem;
+    transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.feature-item:hover {
+    border-color: var(--border);
+}
+
+.feature-icon {
+    font-size: 1.8rem;
+    display: block;
+    margin-bottom: 0.6rem;
+    line-height: 1;
+}
+
+.feature-item h3 {
+    margin: 0 0 0.4rem 0;
+    font-size: 1.15rem;
+    color: var(--ink);
+}
+
+.feature-item p {
+    margin: 0;
+    color: var(--muted);
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Visibility framework handler */
+.main-landing-view.is-hidden {
+    display: none !important;
+}
+
+/* Print rule integration */
+@media print {
+    .main-landing-view {
+        display: none !important;
+    }
+}
+
