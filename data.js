@@ -72,7 +72,7 @@ const EMERGENCIES = [
   {
     id: "choking-adult",
     title: "Choking (Adult & Child)",
-    icon: "🫁",
+    icon: "🤢",
     keywords: ["choking", "airway", "blocked", "heimlich", "abdominal thrust", "cannot breathe"],
     summary: "Clear a blocked airway with back blows and abdominal thrusts.",
     callEmergency: [
@@ -138,7 +138,7 @@ const EMERGENCIES = [
   {
   "id": "Stomach Ache",
   "title": "Stomach Ache/Pain",
-  "icon": "🤢",
+  "icon": "🤮",
   "keywords": ["stomach ache", "belly pain", "abdominal cramps", "indigestion", "cramping", "heartburn", "bloating"],
   "summary": "Rest comfortably, stay hydrated, and monitor for severe symptoms that require emergency medical care.",
   "callEmergency": [
@@ -441,7 +441,7 @@ const EMERGENCIES = [
   {
     id: "nausea",
     title: "Nausea",
-    icon: "🤢",
+    icon: "😵",
     keywords: ["nausea", "vomiting", "queasy", "stomach", "dizziness", "sick", "motion sickness"],
     summary: "Ease queasiness with rest, fresh air, small sips of fluid, and bland foods.",
     callEmergency: [
