@@ -403,35 +403,6 @@ body {
     .btn {
         flex: 1;
     }
-    .app-header {
-        flex-direction: column;
-        align-items: stretch; /* Stretches the children to fill the full container width */
-        padding: 2rem 1.25rem; /* Enhances vertical padding to remove the 'short' compressed feel */
-        gap: 1.5rem; /* Introduces explicit spacing between brand and actions */
-    }
-
-    .brand {
-        flex-direction: row;
-        align-items: center;
-        gap: 0.85rem;
-    }
-
-    .brand-text h1 {
-        font-size: 1.75rem; /* Tailored size for handheld phone viewports */
-    }
-
-    .header-actions {
-        width: 100%;
-        display: grid; /* Swapping to CSS grid ensures uniform and predictable button scaling */
-        grid-template-columns: 1fr; /* Stacks badges and buttons vertically */
-        gap: 0.65rem;
-    }
-
-    .offline-badge, .btn {
-        width: 100%;
-        text-align: center;
-        padding: 0.8rem 1rem; /* Expanded touch targets for easier interaction */
-    }
 }
 
 /* ---------- Print ---------- */
